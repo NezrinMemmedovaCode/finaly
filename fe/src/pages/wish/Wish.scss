@@ -1,0 +1,20 @@
+.wish{
+    max-width: 100%;
+    background-image: url(https://baristam.com/uploads/28122022160207.jpg);
+  
+    gap: 100px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin-top: 100px;
+   
+    align-items: center;
+    .cards{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+        gap: 100px;
+    }
+}

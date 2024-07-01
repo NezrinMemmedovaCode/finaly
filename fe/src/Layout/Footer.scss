@@ -1,0 +1,112 @@
+.footer{
+    background-image: url(https://preview.colorlib.com/theme/coffee/img/footer-bg.jpg);
+    max-width: 100%;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 200px;
+    flex-wrap: wrap;
+    .box1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color:#CFC3AE ;
+        gap: 40px;
+        p{
+            max-width: 500px;
+        }
+
+    }
+    .box2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color:#CFC3AE ;
+        gap: 63px;
+        .icons{
+            display: flex;
+            gap: 20px;
+        }
+        p{
+            max-width: 500px;
+        }
+
+    }
+    .box3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color:#CFC3AE ;
+        gap: 63px;
+        p{
+            max-width: 500px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 990px){
+    .footer{
+        background-image: url(https://preview.colorlib.com/theme/coffee/img/footer-bg.jpg);
+        max-width: 100%;
+        background-repeat: no-repeat;
+        min-height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 100px;
+        flex-wrap: wrap;
+        .box1{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color:#CFC3AE ;
+            gap: 40px;
+            p{
+                max-width: 500px;
+            }
+    
+        }
+        .box2{
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color:#CFC3AE ;
+            gap: 63px;
+            .icons{
+                display: flex;
+                gap: 20px;
+            }
+            p{
+                max-width: 500px;
+            }
+    
+        }
+        .box3{
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color:#CFC3AE ;
+            gap: 63px;
+            p{
+                max-width: 500px;
+            }
+    
+        }
+    }
+
+}

@@ -1,0 +1,528 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin: 0;
+
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.table-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.table-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+  
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #5F2F14;
+    color: #CFC3AE;
+    padding: 12px 15px;
+    text-transform: uppercase;
+
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+ 
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td {
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    padding: 12px 15px;
+    color: #5F2F14;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody td:nth-child(2) {
+    text-align: right;
+}
+
+tbody td:nth-child(3) {
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ddd;
+}
+
+table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+
+
+
+.coffee-cont {
+    width: 100px; 
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    
+  }
+  
+  .coffee-cup {  
+   width: 100px;
+   
+   height: 60px;
+   margin:auto;
+   background:#ECE7E7;
+   border-radius: 0 0 150px 150px;
+   position:relative;
+   top:50%;
+   border: 5px solid #5F2F14;
+
+   overflow:hidden;
+   box-shadow:0 0 0 4px #fff,0 20px 35px rgba(0,0,0,1);
+   animation-iteration-count: infinite;
+  }
+  
+  .coffee-hand{
+    width: 55px;
+    height: 50px;
+    position:absolute;
+    background:#ECE7E7;
+    border-radius: 35px;
+    transform: rotate(-32deg);
+    z-index: -1; 
+    border: 5px solid #5F2F14;
+    top: 53%;
+    left: 70%;
+    -webkit-transform: skew(-17deg);
+    -moz-transform: skew(-17deg);
+    -o-transform: skew(-17deg);
+    animation-iteration-count: infinite;
+   
+   box-shadow:0 0 0 2px #ECE7E7 ,0 20px 30px  rgba(0,0,0,1);
+   }
+  
+  .coffee-cup:before {
+    content:" ";
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:#6F4E37;
+    border-radius:40%;
+  transform:translateX(-90%);
+    animation:fill 4s ease-in-out forwards;
+    animation-iteration-count: infinite;
+   
+  }
+  
+  .coffee-cup:after {
+    content:" ";
+    position:absolute;
+    width:200px;
+    height:300px;
+    background:#AE7F5F;
+    border-radius:40%;
+    transform:translateX(-90%);
+    animation:fill 4s ease-in-out forwards;
+    animation-iteration-count: infinite;
+   
+   
+  }
+  
+  @keyframes fill {
+    from{
+      top:200px;
+      transform:rotate(0deg);
+    }
+    
+    to{
+      top:-100px;
+      transform: rotate(360deg);
+    }
+  }
+  .smallsmoke {
+    position:absolute;
+    content:"";
+    background:#BBB9B9;
+    width:10px;
+    height:25px;
+    left:45%;
+    top:42%;
+    opacity:0%;
+     box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+    animation: smoke 4s linear 0.7s infinite;
+    transition: 0.5s linear;
+   } 
+  .smoke:before {
+    position:absolute;
+    content:"";
+    background:#BBB9B9;
+    width:10px;
+    height:70px;
+    left:60%;
+    top:30%;
+    opacity:0%;
+     box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+    animation: smoke 4s linear infinite;
+    transition: 0.5s linear;
+   }
+  
+  
+  .smoke:after {
+    position:absolute;
+    content:"";
+    background:#BBB9B9;
+    width:10px;
+    height:50px;
+    left:52%;
+    top:35%;
+    opacity:0%;
+     box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+    animation: smoke1 4s linear 0.5s        infinite;
+    transition: 0.5s linear;
+   }
+  
+  @keyframes smoke {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-5px);
+      opacity: 0.2;
+    }
+    70% {
+      transform: translateY(-10px);
+      opacity: 0.2;
+    }
+  
+    100% {
+      transform: translateY(-20px);
+      opacity: 0.2;
+    }
+  }
+  
+  
+  @keyframes smoke1 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-5px);
+      opacity: 0.2;
+    }
+    70% {
+      transform: translateY(-10px);
+      opacity: 0.2;
+    }
+  
+    100% {
+      transform: translateY(-20px);
+      opacity: 0.2;
+    }
+  }
+  
+  
+  
+  
+  
+
+.section1{
+    background-image: url(https://preview.colorlib.com/theme/coffee/img/header-bg.jpg);
+     margin-bottom: 60px;
+    max-width: 100%;
+    min-height: 900px;
+    display: flex;
+    align-items: center;
+    
+    
+    
+    h1{
+        margin:auto;
+        margin-left: 100px;
+        color: #CFC3AE;
+        font-size: 50px;
+        max-width: 550px;
+        font-family: "Playwrite ES Deco", cursive;
+        font-optical-sizing: auto;
+        
+
+    }
+ 
+}
+.section{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+    min-height:600px ;
+    .textt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+
+        p{
+            color: #AE8B69;
+            font-size: 20PX;
+        }
+        h1{
+            color: #5F2F14;
+            font-family: "Playwrite ES Deco", cursive;
+        font-optical-sizing: auto;
+            max-width: 500px;
+        }
+        span{
+            font-size: 20px;
+        }
+    }
+
+    video{
+        width: 500px;
+        height: 500px;
+        border-radius: 50px;
+        box-shadow: 0 4px 8px 0 #5F2F14, 0 6px 20px 0 #5F2F14;
+    }
+}
+.section2{
+    max-width: 100%;
+    position: relative;
+    gap: 100px;
+    background-image: url(https://baristam.com/uploads/28122022160207.jpg);
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    
+    
+    h1{
+        background-color: #AE8B69;
+       font-size: 40px;
+        color: #CFC3AE;
+        font-family: "Playwrite NG Modern", cursive;
+        font-optical-sizing: auto;
+        margin-top: 70px;
+    }
+    .cards{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        display: flex;
+        gap: 120px;
+    }
+    
+ 
+}
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #5F2F14;
+    padding: 20px;
+    margin: 20px;
+    width: 290px;
+    background-color: #CFC3AE;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #3b1f0f;
+}
+
+.card1 h3 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #5F2F14;
+}
+
+.card1 h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #5F2F14;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    gap: 30px;
+}
+
+.buttons div {
+    font-size: 1em;
+    color: #333;
+}
+
+.buttons button {
+    background-color: #AE8B69;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.buttons button:hover {
+    background-color: #CFC3AE;
+}
+
+.buttons button:active {
+    transform: scale(0.95);
+}
+
+.buttons button:first-child {
+    background-color: #AE8B69;
+}
+
+.buttons button:first-child:hover {
+    background-color: #CFC3AE;
+}
+
+.buttons button:first-child:active {
+    transform: scale(0.95);
+}
+
+    
+
+
+
+.section3{
+    
+    max-width: 100%;
+    font-size: 20px;
+        color: #AE8B69;
+         font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+
+    justify-content: center;
+    
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    min-height: 1000px;
+    gap: 100px;
+    h1{
+        font-family: "Playwrite NG Modern", cursive;
+  font-optical-sizing: auto;
+    }
+
+    .images{
+        
+        img{
+            box-shadow: 0 4px 8px 0 #5F2F14, 0 6px 20px 0 #5F2F14;
+
+        }
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        
+
+        .image12{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            flex-direction: column;
+            
+        }
+        .image345{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            flex-direction: column;
+            .image45{
+                display: flex;
+                gap: 25px;
+                flex-wrap: wrap;
+            }
+
+        }
+
+    }
+    
+
+
+}
+
+.section4{
+    width: 100%;
+    min-height: 1500px;
+    justify-content: center;
+    align-items: center;
+   gap: 80px;
+    display: flex;
+    flex-direction: column;
+    h1{
+        color: #AE8B69;
+        margin-top: 50px;
+        font-family: "Playwrite NG Modern", cursive;
+  font-optical-sizing: auto;
+        font-size: 40px;
+
+    }
+   
+        }
+        
+
+.section5{
+    max-width:  100%;
+   min-height: 800px;
+   background-image: url(https://luganocaffe.com.tr/wp-content/uploads/2020/11/LG-Coffee-Ground-scaled.jpg);
+  
+   background-repeat: no-repeat;
+   background-position: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 100px;
+   h1{
+    color: #AE8B69;
+    font-family: "Playwrite NG Modern", cursive;
+  font-optical-sizing: auto;
+    font-size: 40px;
+
+}
+p{
+   color: #CFC3AE;
+    max-width: 80%;
+    font-size: 18px;
+}
+}
