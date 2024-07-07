@@ -1,0 +1,109 @@
+// Variables
+$color-main: #5F2F14;
+$color-accent: #AE8B69;
+$color-light: #CFC3AE;
+$color-bg: #f2f2f2;
+$color-dark: #333;
+$color-form-bg: #fff;
+$color-border: #ddd;
+$color-placeholder: #9e9e9e;
+$error-color: #d9534f;
+$success-color: #5bc0de;
+
+// Global Styles for Auth Pages
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: $color-bg;
+  padding: 20px;
+
+  .auth-form {
+    background-color: $color-form-bg;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+
+    h1 {
+      color: $color-main;
+      margin-bottom: 20px;
+      font-family: 'Playwrite NG Modern', cursive;
+      font-size: 24px;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+
+      label {
+        display: block;
+        text-align: left;
+        color: $color-dark;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $color-border;
+        border-radius: 5px;
+        box-sizing: border-box;
+
+        &::placeholder {
+          color: $color-placeholder;
+        }
+      }
+    }
+
+    .error-message {
+      color: $error-color;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .btn-group {
+      margin-top: 20px;
+
+      button {
+        background-color: $color-main;
+        color: $color-light;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: darken($color-main, 10%);
+        }
+
+        &:disabled {
+          background-color: $color-accent;
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    .auth-links {
+      margin-top: 15px;
+      font-size: 14px;
+
+      a {
+        color: $color-main;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
